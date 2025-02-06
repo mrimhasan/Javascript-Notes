@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SetTimeout and setInterval</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    /*******setTimeout******/ // it is also call an API from browser
+    // passing by reference
+   function hey(){
+    console.log("Hello Dude")
+   }
+   setTimeout(hey,2000)
+   
+//passing by call back
+// setTimeout(function(){
+//   console.log("Imran Hasan")
+// },2000) // it is a function but it also call an API // this func access through browser
+
+function changetext(){
+    document.querySelector('h1').innerHTML = "New setTimeout"
+}
+const change = setTimeout(changetext,2000)
+//clearTimeout(change);
+//  document.querySelector("#stop").addEventListener('click', ()=>{
+//     clearTimeout(change);
+//     console.log("stoped")
+//  })
+</script>
+</html>

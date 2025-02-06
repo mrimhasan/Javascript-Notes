@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:#212121;">
+
+    <!-- STATES -->
+0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+    
+</body>
+<script>
+    // Topic name AJAX request
+    const requestUrl = 'https://api.github.com/users/mrimhasan'
+    const rqst_sendAndrcieve = new XMLHttpRequest()
+
+    rqst_sendAndrcieve.open('GET',requestUrl)
+    rqst_sendAndrcieve.send()
+    console.log(rqst_sendAndrcieve.readyState)  // these STATES change continiously
+    rqst_sendAndrcieve.onreadystatechange = function(){
+        console.log(rqst_sendAndrcieve.readyState)
+        if(rqst_sendAndrcieve.readyState===4){
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data)
+            console.log(data.name)}
+        
+    }
+    
+  /********** V8 Engine *********/
+  // console and document are not a part of core Js 
+  // console is a debugging tool(dev tool of browser)  inject by the runtime of Js
+  //there are so many engines for running javascript among out of them V8 engine one is.
+  //
+</script>
+</html>

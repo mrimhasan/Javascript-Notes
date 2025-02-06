@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            margin: 25px;
+            padding: 20px;
+            text-align: center;
+        }
+        button{
+            margin: 25px;
+            padding: 20px;
+            cursor: pointer;
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+</head>
+
+<body style="background-color: black; color: azure;">
+    <h1>Click on Start button to change the background colour continuously for stoping click on Stop button</h1>
+    <div><button id="start">Start</button>
+        <button id="stop">Stop</button></div>
+
+    <script>
+        const Randomcolor_value = function(){
+            const hex = '0123456789ABCDEF'
+            let addNum = '#';
+            for(let i=0;i<6;i++){
+                addNum += hex[Math.floor(Math.random()*16)] 
+            }
+            return addNum
+        }
+        let intervalId;
+        const showMe = function(){
+            if(!intervalId)
+            intervalId = setInterval(handler,1000)
+            function handler(){
+                document.body.style.backgroundColor = Randomcolor_value()
+            }
+        }
+       
+        document.querySelector('#start').addEventListener('click', showMe)
+        document.querySelector('#stop').addEventListener('click', () => {
+            clearInterval(intervalId)
+            intervalId = null
+        })
+    </script>
+</body>
+</html>

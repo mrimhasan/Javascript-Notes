@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and remove</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    
+    function addlang(langName) {
+       const li = document.createElement('li')
+       // here we traverse whoe tree and then append child done
+        li.innerHTML = langName
+        document.querySelector('.language').appendChild(li)
+    }
+    addlang('typescript')
+    addlang('golang')
+
+    function add_optimize_Lang(langName) {
+        const li = document.createElement('li')
+        //it is optimize way to append child 
+        li.appendChild(document.createTextNode(langName))
+         document.querySelector('.language').appendChild(li)   
+    }
+    add_optimize_Lang('java')
+
+    // edit
+
+    const secondlang = document.querySelector('li:nth-child(2)')
+    console.log(secondlang)
+    //secondlang.innerHTML = "mojo" //not optimize way
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondlang.replaceWith(newli)
+
+    //edit
+
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML = '<li>Typescript</li>'  // replace 
+    console.log(document.querySelector(".language").outerHTML)
+    //remove
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>

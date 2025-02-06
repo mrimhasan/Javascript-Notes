@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom | chai or code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thursday</div>
+    </div>
+</body>
+
+                <!-- RELATION -->
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+     console.log(parent.children)
+     console.log(parent.children[0].textContent);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    // parent.children[0].style.color="aqua"
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    // const day1 = document.querySelector('.day')
+    // console.log(day1);
+    // console.log(day1.parentElement);
+    // console.log(day1.nextElementSibling);
+    // console.log(day1.nextSibling);
+    // console.log("NODES :-",parent.childNodes);
+</script>
+</html>

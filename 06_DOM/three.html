@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+  const div = document.createElement('div')
+   console.log(div)
+   // give name of attribute 
+   div.className = "main" // ye element ko layega fir attribute ko set karega 
+   div.id = Math.round(Math.random()*10+1)
+   div.setAttribute("title","generated title") // ye attribute ko wahi jakar set karega isliye ye jyada prefer karte hai 
+   div.style.backgroundColor = "green"
+   div.style.padding = "12px"
+   
+// abhi ye memory m hai display par show nhi ho rha
+
+// ab display par show hoga 
+   //div.innerText = "chai aur code"
+   const addText = document.createTextNode("chai aur code")
+   div.appendChild(addText)
+  console.log(document.getElementById(''))
+   document.body.appendChild(div)
+</script>
+</html>
