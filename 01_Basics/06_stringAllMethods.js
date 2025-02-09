@@ -3,12 +3,6 @@
 const play = new String('game')
 const play2 = "game2"
 
-        /*****anchor method******/ 
-        // this feature is no longer recommended
-//         const myString = "Table of Contents";
-// document.body.innerHTML = myString.anchor("contents_anchor");
-// <a name="contents_anchor">Table of Contents</a>  // out put
-
         /*****at******/  
         // it gives the character at position of 0,1,2,3 etc.
         // play.at(0) and play[0] work same but at use in DOM
@@ -18,23 +12,6 @@ const play2 = "game2"
      //console.log(lastinde)
      //console.log(play[-1]) // not work
      //console.log(play[play.length-1])
-
-        /*****big,small,fontsize *****/ 
-        // No longer needed use in html 4  (as well as html5 tags except <small>) 
-//const worldString = "Hello, world";
-
-// console.log(worldString.small()); // <small>Hello, world</small>
-// console.log(worldString.big()); // <big>Hello, world</big> // instead of this use font-size 
-// console.log(worldString.fontsize(7)); // <font size="7">Hello, world</font>
-
-        /*****bold,blink,strike,italics *****/
-        // no longer needed (as well as html5 tags except <i>) 
-//  const worldString = "Hello, world";
-
-//  console.log(worldString.blink()); // <blink>Hello, world</blink>
-// console.log(worldString.bold()); // <b>Hello, world</b>
-// console.log(worldString.italics()); // <i>Hello, world</i>
-// console.log(worldString.strike()); // <strike>Hello, world</strike>
 
         /*****charAt*****/
         // not take -ve value  
@@ -88,19 +65,11 @@ const play2 = "game2"
         /*****isWellFormed *****/
         // ??
  
-        /******lastIndexOf ******/
+        /****** lastIndexOf ******/
         // last occurrence of the specified substring
 let demo = "memememe"
 // console.log(demo.lastIndexOf('me'));
 // console.log(demo.indexOf('me'));
-
-        /*****link ******/
-        // no longer needed
-// const hotText = "MDN";
-// const url = "https://developer.mozilla.org/";
-
-// console.log(`Click to return to ${hotText.link(url)}`);
-// // Click to return to <a href="https://developer.mozilla.org/">MDN</a>
 
         /*****localeCompare *****/
         //??
@@ -173,20 +142,7 @@ const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was 
 // console.log(str1.startsWith('Sat'));
 // console.log(str1.startsWith('Sat', 3));
 
-        /******sub(),substr() and sup() *****/
-        // no longer needed
-//const superText = "superscript";
-// const subText = "subscript";
 
-// console.log(`This is what a ${superText.sup()} looks like.`);
-// // "This is what a <sup>superscript</sup> looks like."
-
-// console.log(`This is what a ${subText.sub()} looks like.`);
-// // "This is what a <sub>subscript</sub> looks like."
-
-// const str = 'Mozilla';
-// console.log(str.substr(1, 2));
-//Expected output: "oz"
 
         /*****substring *****/ // include starting parameter
         // not take -ve value 

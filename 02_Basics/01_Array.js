@@ -7,11 +7,12 @@
 // JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).
 
 /******Decleration*************** */
-//One key difference between an array and a new array is that an array is a reference type, while a new array is a value type. This means that when you assign an array to a variable, you are actually assigning a reference to the array. If you modify the array, the changes will be reflected in the variable. However, when you assign a new array to a variable, you are actually assigning a copy of the array. If you modify the new array, the changes will not be reflected in the variable
+//"Both an array created with [] and new Array() are reference types, meaning they store memory references rather than actual values. Modifying one affects all variables pointing to the same reference."
+// If you want to create a new copy (not just a reference), use the spread operator (...) or slice().
 
 const arr = [0,1,2,true,"imran"]
 const myarr = ["captain","iron"]
-
+const actualCopy = [...arr] 
 const newarr = new Array(1,2,3,4)
 arr.push(5)
 newarr.push(5)

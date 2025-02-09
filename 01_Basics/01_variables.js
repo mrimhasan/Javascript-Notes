@@ -6,7 +6,7 @@ accountCity = "Agra" // esa bhi ho sakta hai but karna nahi
 // accountId = 5
 let accountState;
 // console.log(accountId);
-accountCity ="Kanpur"
+accountState ="Kanpur"
 accountEmail = "fkjhsdkfj@gmail.com"
 accountPassword="kjdskfk"
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
