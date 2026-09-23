@@ -28,7 +28,6 @@ const newArray=[... firstArray, 35, 40];
 // console.log(Array.isArray("imran"))
 // console.log(Array.from("imran"))
 // console.log(Array.of("imran"))
-//  console.log(Array.from("imran"))
 //  console.log(Array.from({name:"imran"}))//interesting  //key value pair type
 let one = 100
 let two = 200

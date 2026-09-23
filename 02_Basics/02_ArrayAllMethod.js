@@ -269,7 +269,7 @@ console.log(array1.find( (value) => value>2 ));
 const example = ['hi', 'hey', 'hello'];
 // array destructuring
 const [...test] = example;
-console.log(test);
+//console.log(test);
 
 
 /***********keys,values,entries,foreach,map, [flatmap,filter,reduce,] ***********************/

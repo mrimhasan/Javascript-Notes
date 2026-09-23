@@ -1,7 +1,11 @@
 
         /**some technical words */
       // Hoisting  => it means a varaible want to access before innitialization
+      //Hoisting is a concept or behavior in JavaScript where the declaration of a function, variable, or class goes to the top of the scope they were defined in
+
+
       // lexical environment => heirarcy of varaible or function in scope 
+      //A lexical environment in JavaScript is a data structure that stores variables and functions defined in the current scope, along with references to all outer scopes. It is also known as the lexical scope
       // Scope chain => it means if we want to access a variable or func. inside a function and not present then search in global space it is known as scope chain
         
     //     console.log(x);

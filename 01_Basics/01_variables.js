@@ -11,5 +11,5 @@ accountEmail = "fkjhsdkfj@gmail.com"
 accountPassword="kjdskfk"
 console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
 
-/*prefer  not to use var
-beacause of issue in block and functional scope  */
+/*prefer  not to use var 
+beacause of issue in block and functional scope => The main reasons are scope, hoisting, redeclaration, and accidental reassignment. */

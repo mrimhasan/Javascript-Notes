@@ -19,6 +19,10 @@
 //*********************MATHS******************* */
 
 // console.log(Math)
+const prop = Object.getOwnPropertyDescriptor(Math, "PI")
+Math.PI = 5 // we can't change value of pi
+let pi = Math.PI
+console.log(prop, pi)
 // console.log(Math.abs(-4))
 // console.log(Math.ceil(4.5))
 // console.log(Math.floor(4.5))

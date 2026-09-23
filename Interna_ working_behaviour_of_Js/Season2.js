@@ -183,11 +183,11 @@ async function Getdata(){
     
     console.log("It wait for 10 seconds to promise resolved")
 
-    const data2 = await promise
+    const data2 = await promise2
     console.log(data2)
     console.log("It wait for 10 seconds to promise resolved 2")
 }
-//Getdata();
+Getdata();
 
 /******** Real world example *******/
 

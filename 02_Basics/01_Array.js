@@ -10,6 +10,24 @@
 //"Both an array created with [] and new Array() are reference types, meaning they store memory references rather than actual values. Modifying one affects all variables pointing to the same reference."
 // If you want to create a new copy (not just a reference), use the spread operator (...) or slice().
 
+// Creating an array using array literal
+let arr1 = [1, 2, 3];
+
+// Assign arr1 to arr2 (both now reference the same array)
+let arr2 = arr1;
+
+console.log("Before modification:");
+console.log("arr1:", arr1); // [1, 2, 3]
+console.log("arr2:", arr2); // [1, 2, 3]
+
+// Modifying arr2 (this also affects arr1)
+arr2.push(4);
+
+console.log("After modification:");
+console.log("arr1:", arr1); // [1, 2, 3, 4]
+console.log("arr2:", arr2); // [1, 2, 3, 4]
+
+
 const arr = [0,1,2,true,"imran"]
 const myarr = ["captain","iron"]
 const actualCopy = [...arr] 

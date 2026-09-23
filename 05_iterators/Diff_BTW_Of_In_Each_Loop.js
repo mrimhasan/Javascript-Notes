@@ -30,7 +30,7 @@ for (const char of str1) {
 // To get both key (index) and value, you need to use .entries(){it return new array iterator object contains the key/value pair at each index}
 
 // Correct way with destructuring: Using entries() to get both index and value
-for (const [key, char] of str.entries()) {
+for (const [key, char] of [...str1].entries()) {
     console.log(char);  // value
     console.log(key);   // index
 }
@@ -120,6 +120,10 @@ fruits.forEach((fruit, index) => {
 
 Object.keys(person).forEach(key => {
     console.log(key, person[key]);
+});
+
+Object.values(person).forEach(val => {
+    console.log(val);
 });
 
 Object.entries(person).forEach(([key, value]) => {
